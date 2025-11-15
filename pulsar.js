@@ -46,7 +46,32 @@ $: stack(
   .gain(0.55)
   .room(0.31)
   .roomsize(1)
-  .roomfade(0.5);
+  .roomfade(0.5)
+  .orbit(3);
+
+$: stack(
+  // LOWS
+  n(irand(1).ribbon("<10 131 547>", 1))
+    .sound("<Kick:1>")
+    .struct("<x(2,8)><x(2,8)>")
+    .slow(1)
+    .duck(3)
+    // .chop(16).ply("<16 1 8 32 3 8>")
+    // .fit()
+    // SFX
+    .lpf("<100 200 300>/0.125")
+    .lpq(6)
+    .lpe("<2 3 2 1>/0.125")
+    .lpd("0.09"),
+  // .delay("<.25 .25 .5 0.75>").delaytime(0.1)
+  // .phaser(1).phaserdepth(10)
+  // .hpf(200)
+)
+  .gain(0.95)
+  .room(0.31)
+  .roomsize(1)
+  .roomfade(0.5)
+  .orbit(1);
 
 $: stack(
   // DRUMS
@@ -69,4 +94,5 @@ $: stack(
   .gain(0.25)
   .room(0.8)
   .roomsize(10)
-  .roomfade(0.5);
+  .roomfade(0.5)
+  .orbit(1);
