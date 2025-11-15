@@ -1,6 +1,6 @@
 // Космическая таинственная мелодия с рандомными нотами в mixolydian скейле
 // samples('http://localhost:5432/');
-samples('./samples/strudel.json');
+samples('https://raw.githubusercontent.com/bkamuz/pulsar/refs/heads/main/samples/strudel.json');
 
 stack(
   // ============================================
