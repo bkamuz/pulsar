@@ -1,6 +1,4 @@
-samples(
-  "https://raw.githubusercontent.com/bkamuz/pulsar/refs/heads/main/samples/strudel.json",
-);
+samples('https://raw.githubusercontent.com/bkamuz/pulsar/refs/heads/main/samples/strudel.json');
 
 $: stack(
   // HARMONY
